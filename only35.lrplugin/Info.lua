@@ -13,6 +13,7 @@ return {
     -- Plugin identification
     LrToolkitIdentifier = "app.only35.lightroom",
     LrPluginName = "Only35",
+    LrPluginIcon = "icon.png",
 
     -- Export/Publish Service registration
     LrExportServiceProvider = {

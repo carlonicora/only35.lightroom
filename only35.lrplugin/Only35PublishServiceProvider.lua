@@ -30,11 +30,11 @@ local publishServiceProvider = {
     -- Service identification
     title = "Only35",
     supportsIncrementalPublish = true,
-    -- small_icon = "only35_icon.png",  -- Uncomment when icon file is added
+    small_icon = "icon.png",
 
     -- Supported features
     canExportVideo = false,
-    hideSections = { "exportLocation", "fileNaming" },
+    hideSections = { "exportLocation", "fileNaming", "fileSettings", "imageSettings", "outputSharpening", "video" },
     allowFileFormats = { "JPEG" },
     allowColorSpaces = { "sRGB" },
 
@@ -58,26 +58,22 @@ local publishServiceProvider = {
 }
 
 --------------------------------------------------------------------------------
--- Export Settings (Image Quality)
+-- Export Settings (applied at export time)
 --------------------------------------------------------------------------------
 
-publishServiceProvider.exportServiceExportSettings = {
-    LR_format = "JPEG",
-    LR_jpeg_quality = 0.80,
-    LR_jpeg_useLimitSize = false,
-    LR_size_doConstrain = true,
-    LR_size_maxWidth = 1920,
-    LR_size_maxHeight = 1920,
-    LR_size_resizeType = "longEdge",
-    LR_outputSharpeningOn = true,
-    LR_outputSharpeningMedia = "screen",
-    LR_outputSharpeningLevel = 2,
-    LR_useWatermark = false,
-    LR_metadata_keywordOptions = "lightroomHierarchical",
-    LR_embeddedMetadataOption = "all",
-    LR_export_colorSpace = "sRGB",
-    LR_removeLocationMetadata = false,
-}
+function publishServiceProvider.updateExportSettings(exportSettings)
+    -- Force export settings at export time (overrides UI values)
+    exportSettings.LR_format = "JPEG"
+    exportSettings.LR_jpeg_quality = 0.80
+    exportSettings.LR_size_doConstrain = true
+    exportSettings.LR_size_maxWidth = 1920
+    exportSettings.LR_size_maxHeight = 1920
+    exportSettings.LR_size_resizeType = "longEdge"
+    exportSettings.LR_outputSharpeningOn = true
+    exportSettings.LR_outputSharpeningMedia = "screen"
+    exportSettings.LR_outputSharpeningLevel = 2
+    exportSettings.LR_export_colorSpace = "sRGB"
+end
 
 --------------------------------------------------------------------------------
 -- Dialog Initialization

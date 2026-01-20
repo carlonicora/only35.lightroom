@@ -1,0 +1,13 @@
+return {
+    _all = {
+        lpath = "./only35.lrplugin/?.lua;./test/?.lua;./test/mocks/?.lua;./test/helpers/?.lua",
+    },
+    default = {
+        verbose = true,
+        output = "utfTerminal",
+    },
+    ci = {
+        output = "TAP",
+        verbose = true,
+    },
+}

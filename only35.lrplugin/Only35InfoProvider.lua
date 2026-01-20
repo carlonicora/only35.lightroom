@@ -29,13 +29,15 @@ return {
                     viewFactory:push_button {
                         title = "Visit Only35",
                         action = function()
-                            LrHttp.openUrlInBrowser("https://only35.app")
+                            LrHttp.openUrlInBrowser("https://only35.test:3801")
+                            -- LrHttp.openUrlInBrowser("https://only35.app")
                         end,
                     },
                     viewFactory:push_button {
                         title = "Get Help",
                         action = function()
-                            LrHttp.openUrlInBrowser("https://only35.app/help/lightroom")
+                            LrHttp.openUrlInBrowser("https://only35.test:3801/help/lightroom")
+                            -- LrHttp.openUrlInBrowser("https://only35.app/help/lightroom")
                         end,
                     },
                 },
