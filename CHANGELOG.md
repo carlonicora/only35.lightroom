@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/carlonicora/only35.lightroom/compare/v1.1.0...v1.1.1) (2026-01-20)
+
+
+### Bug Fixes
+
+* correct only35 url ([f0b0124](https://github.com/carlonicora/only35.lightroom/commit/f0b012484f796d96dbcc2d52284abb50dde73f2f))
+
 ## [1.1.0](https://github.com/carlonicora/only35.lightroom/compare/v1.0.1...v1.1.0) (2026-01-20)
 
 
