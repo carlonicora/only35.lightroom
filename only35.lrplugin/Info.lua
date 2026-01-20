@@ -27,9 +27,9 @@ return {
     -- Version information
     VERSION = {
         major = 1,
-        minor = 0,
-        revision = 1,
+        minor = 1,
+        revision = 0,
         build = 1,
-        display = "1.0.1",
+        display = "1.1.0",
     },
 }
