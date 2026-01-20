@@ -27,8 +27,8 @@ return {
     VERSION = {
         major = 1,
         minor = 0,
-        revision = 0,
+        revision = 1,
         build = 1,
-        display = "1.0.0",
+        display = "1.0.1",
     },
 }
