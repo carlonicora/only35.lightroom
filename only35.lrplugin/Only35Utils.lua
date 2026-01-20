@@ -12,18 +12,18 @@ local Only35Utils = {}
 -- API Configuration
 --------------------------------------------------------------------------------
 
-Only35Utils.API_BASE_URL = "http://api.only35.test:3800"
--- Only35Utils.API_BASE_URL = "http://api.only35.app"
-Only35Utils.WEB_BASE_URL = "http://only35.test:3801"
--- Only35Utils.WEB_BASE_URL = "http://only35.app"
+-- Only35Utils.API_BASE_URL = "http://api.only35.test:3800"
+Only35Utils.API_BASE_URL = "http://api.only35.app"
+-- Only35Utils.WEB_BASE_URL = "http://only35.test:3801"
+Only35Utils.WEB_BASE_URL = "http://only35.app"
 
 --------------------------------------------------------------------------------
 -- OAuth Configuration
 --------------------------------------------------------------------------------
 
 Only35Utils.CLIENT_ID = "lightroom"
-Only35Utils.REDIRECT_URI = "http://only35.test:3801/oauth/success"
--- Only35Utils.REDIRECT_URI = "http://only35.app/oauth/success"
+-- Only35Utils.REDIRECT_URI = "http://only35.test:3801/oauth/success"
+Only35Utils.REDIRECT_URI = "http://only35.app/oauth/success"
 
 Only35Utils.SCOPES = {
     "photographs:read",
